@@ -13,7 +13,6 @@ class ArticlesSearch {
     final url = type == "search" ?  '${Const.baseUrl}/search/v2/articlesearch.json?q=${article}&api-key=${Const.apikey}' :
     '${Const.baseUrl}/mostpopular/v2/${article}/30.json?api-key=${Const.apikey}'
     ;
-
     var dio = Dio();
     try {
       var response = await dio.get(url,  options: Options(
