@@ -18,7 +18,6 @@ class ArticlesSearch {
     try {
       var response = await dio.get(url,  options: Options(
         responseType: ResponseType.plain,
-
       ));
       if(response.statusCode ==200){
         String  json = response.data.toString();
